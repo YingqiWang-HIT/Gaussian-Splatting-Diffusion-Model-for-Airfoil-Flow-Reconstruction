@@ -1,8 +1,10 @@
-# PGaus-Diff: Physically Constrained Diffusion of Continuous Gaussian Fields
+# Physically Constrained Diffusion of Continuous Gaussian Fields
 
-This repository provides a reference implementation of the paper. The paper is currently under review and has not been publicly published. Detailed information will be provided after publication.
+This repository provides a reference implementation of the paper. 
 
-PGaus-Diff reconstructs transonic airfoil flow fields as continuous anisotropic Gaussian primitive fields. The code contains:
+**The paper is currently under review and has not been publicly published. Detailed information will be provided after publication.**
+
+This method reconstructs transonic airfoil flow fields as continuous anisotropic Gaussian primitive fields. The code contains:
 
 - **CGF-CDG**: Continuous Gaussian field conditional diffusion generator.
 - **SA-GTR**: Shock-aware Gaussian topology reorganization by directional split-merge refinement.
