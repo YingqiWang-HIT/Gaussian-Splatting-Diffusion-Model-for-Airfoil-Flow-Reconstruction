@@ -1,8 +1,6 @@
-# PGaus-Diff: Physics-Constrained Continuous Gaussian Field Diffusion
+# PGaus-Diff: Physically Constrained Diffusion of Continuous Gaussian Fields
 
-This repository provides the reference implementation for the manuscript:
-
-**Physics-Constrained Continuous Reconstruction of Shock-Dominated Transonic Airfoil Flow Fields across Multiple Resolutions**
+This repository provides a reference implementation of the paper. The paper is currently under review and has not been publicly published. Detailed information will be provided after publication.
 
 PGaus-Diff reconstructs transonic airfoil flow fields as continuous anisotropic Gaussian primitive fields. The code contains:
 
