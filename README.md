@@ -44,7 +44,6 @@ PGaus-Diff-GitHub/
 │   ├── prefit_gaussians.py
 │   └── train.py
 ├── LICENSE
-├── CITATION.cff
 ├── pyproject.toml
 └── requirements.txt
 ```
