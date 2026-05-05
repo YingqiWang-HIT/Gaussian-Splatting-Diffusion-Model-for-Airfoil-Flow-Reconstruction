@@ -1,10 +1,1 @@
-cff-version: 1.2.0
-message: "If you use this code, please cite the associated paper."
-title: "PGaus-Diff: Physics-Constrained Continuous Gaussian Field Diffusion"
-authors:
-  - family-names: "Wang"
-    given-names: "Yingqi"
-year: 2026
-version: 1.0.0
-license: MIT
-repository-code: "https://github.com/<your-name>/PGaus-Diff"
+The paper is still under review and is not yet publicly available.
