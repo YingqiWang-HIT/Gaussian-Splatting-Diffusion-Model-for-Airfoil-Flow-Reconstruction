@@ -12,7 +12,7 @@ PGaus-Diff reconstructs transonic airfoil flow fields as continuous anisotropic 
 - Multi-resolution Gaussian splatting renderer.
 - Training, inference, evaluation, and synthetic demo-data scripts.
 
-> The released code is designed to make the method, training pipeline, and evaluation protocol transparent. The CFD dataset used in the paper should be placed under `data/` following the format in `docs/data_format.md`. A small synthetic demo is included only to verify the pipeline.
+> The released code is designed to make the method, training pipeline, and evaluation protocol transparent. The CFD dataset used in the paper should be placed under `data/` following the format in `docs/data_format.md`. 
 
 ## Repository structure
 
@@ -51,14 +51,7 @@ PGaus-Diff-GitHub/
 
 ## Installation
 
-```bash
-git clone https://github.com/<your-name>/PGaus-Diff.git
-cd PGaus-Diff
-conda create -n pgausdiff python=3.12 -y
-conda activate pgausdiff
-pip install -r requirements.txt
-pip install -e .
-```
+Please refer to requirements.txt for details.
 
 The manuscript experiments used Python 3.12, PyTorch 2.7, CUDA 12.9, two NVIDIA RTX 5090 GPUs, and an Intel Core i9-14900KF CPU. The demo can run on CPU or a single GPU.
 
@@ -75,26 +68,6 @@ The demo will:
 3. Train a small conditional diffusion model.
 4. Run inference and render a higher-resolution field.
 5. Evaluate PSNR, SSIM, and conservation residuals.
-
-## Training on your CFD dataset
-
-Prepare `.npz` files according to `docs/data_format.md`, then run:
-
-```bash
-python scripts/prefit_gaussians.py --config configs/pgausdiff.yaml
-python scripts/train.py --config configs/pgausdiff.yaml
-python scripts/infer.py --config configs/pgausdiff.yaml --checkpoint outputs/checkpoints/best.pt
-python scripts/evaluate.py --config configs/pgausdiff.yaml --pred_dir outputs/predictions
-```
-
-## Data availability
-
-The code is released for method reproducibility. If the CFD dataset contains proprietary meshes, commercial-solver outputs, or unpublished airfoil geometries, provide either:
-
-- a public subset,
-- synthetic/demo samples,
-- preprocessing scripts and exact data format,
-- or a data-availability statement explaining access restrictions.
 
 ## Main hyperparameters used in the paper
 
@@ -121,4 +94,4 @@ For the quick demo, these values are reduced in `configs/demo.yaml`.
 
 ## Citation
 
-If this code is useful, please cite the corresponding paper. See `CITATION.cff`.
+The paper is currently under review. Specific citations and other implementation details will be made public after the paper is accepted.
