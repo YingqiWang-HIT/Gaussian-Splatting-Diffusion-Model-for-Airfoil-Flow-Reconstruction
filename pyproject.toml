@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pgausdiff"
+version = "1.0.0"
+description = "Physics-constrained continuous Gaussian field diffusion for transonic airfoil flow reconstruction."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Yingqi Wang"}]
+dependencies = [
+  "torch>=2.2",
+  "numpy>=1.26",
+  "pyyaml>=6.0",
+  "tqdm>=4.66",
+  "scikit-image>=0.22",
+  "matplotlib>=3.8"
+]
+
+[tool.setuptools.packages.find]
+include = ["pgausdiff*"]

@@ -1,0 +1,55 @@
+data:
+  root: data/demo
+  train_split: train
+  test_split: test
+  geometry_points: 200
+  primitive_count: 8
+  theta_min: [0.0, 0.0, 0.005, 0.005, -3.14159, 0.05, -2.0, -2.0, 0.05]
+  theta_max: [1.0, 1.0, 0.30, 0.30, 3.14159, 2.50, 2.0, 2.0, 2.50]
+model:
+  primitive_dim: 9
+  flow_dim: 4
+  embed_dim: 16
+  geometry_conv_layers: 2
+  condition_mlp_layers: 2
+  transformer_layers: 2
+  attention_heads: 4
+  ffn_dim: 32
+  dropout: 0.0
+diffusion:
+  steps: 10
+  sample_steps: 2
+  beta_start: 0.0001
+  beta_end: 0.02
+physics:
+  gamma: 1.4
+  gas_constant: 287.05
+  lambda_phys: 0.01
+  lambda_weak: 0.001
+  lambda_bc: 0.1
+  collocation_points: 64
+  control_volumes: 8
+  integral_points_per_side: 4
+  eps: 0.0000001
+refinement:
+  rounds: 1
+  fine_tune_steps: 3
+  split_percentile: 95.0
+  split_scale: 0.5
+  merge_threshold: 0.02
+  distance_threshold: 0.04
+  fine_tune_lr: 0.0001
+  max_primitives: 16
+train:
+  seed: 42
+  epochs: 1
+  batch_size: 4
+  lr: 0.0001
+  weight_decay: 0.0
+  grad_clip: 1.0
+  num_workers: 0
+  save_every: 1
+  output_dir: outputs/demo
+  device: cuda
+  use_physics_loss: false
+  render_points_for_physics: 32
