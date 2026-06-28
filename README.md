@@ -1,8 +1,6 @@
 # Physically Constrained Diffusion of Continuous Gaussian Fields
 
-This repository provides a reference implementation of the paper. 
-
-**The paper is currently under review and has not been publicly published. Detailed information will be provided after publication.**
+This repository provides a reference implementation of the paper "Physics-Constrained Continuous Reconstruction of Shock-Dominated Transonic Airfoil Flow Fields across Multiple Resolutions".
 
 This method reconstructs transonic airfoil flow fields as continuous anisotropic Gaussian primitive fields. The code contains:
 
