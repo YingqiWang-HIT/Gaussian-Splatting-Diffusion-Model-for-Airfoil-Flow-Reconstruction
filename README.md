@@ -91,8 +91,6 @@ For the quick demo, these values are reduced in `configs/demo.yaml`.
 
 ## Citation
 
-## Citation
-
 If you find this repository useful, please cite our paper:
 
 ```bibtex
