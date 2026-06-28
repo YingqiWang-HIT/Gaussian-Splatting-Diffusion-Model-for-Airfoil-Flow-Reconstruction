@@ -93,4 +93,19 @@ For the quick demo, these values are reduced in `configs/demo.yaml`.
 
 ## Citation
 
-The paper is currently under review. Specific citations and other implementation details will be made public after the paper is accepted.
+## Citation
+
+If you find this repository useful, please cite our paper:
+
+```bibtex
+@article{wang2026physics,
+  title   = {Physics-Constrained Continuous Reconstruction of Shock-Dominated Transonic Airfoil Flow Fields across Multiple Resolutions},
+  author  = {Wang, Yingqi and Song, Yuchen and Wang, Wentao and Zhang, Yusu and Liu, Datong},
+  journal = {Aerospace Science and Technology},
+  year    = {2026},
+  pages   = {113044},
+  issn    = {1270-9638},
+  doi     = {10.1016/j.ast.2026.113044},
+  url     = {https://www.sciencedirect.com/science/article/pii/S1270963826014227}
+}
+```
